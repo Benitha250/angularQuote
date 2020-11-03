@@ -11,11 +11,11 @@ export class QuoteDetailsComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
-  like() {
-    this.quote.like++;
+  upvote() {
+    this.quote.upvote++;
   }
-  dislike() {
-    this.quote.dislike++;
+  downvote() {
+    this.quote.downvote++;
   }
   constructor() { }
   ngOnInit(): void {
