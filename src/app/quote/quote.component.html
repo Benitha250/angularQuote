@@ -4,7 +4,7 @@
     <ul>
       <li *ngFor='let quotes of quote'>
         {{quotes.quote}}
-        <app-quote-details [quote]='quote'></app-quote-details>
+        <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
       </li>
     </ul>
   </div>
