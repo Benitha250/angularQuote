@@ -7,8 +7,9 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'Do not settle for less', 'Unknown', 'Benitha', new Date(2020,5,2), 0, 0),
-
+    new Quote(1, 'I have a dream', '-Martin Luther King', 'Aimee', new Date(2020,5,2), 0, 0),
+    new Quote(2, 'Discipline is the bridge between quotes and accomplishment.', '-Jim Rohn', 'Paccy', new Date(2020,8,6), 0, 0),
+    new Quote(3, 'Whatever you are, be a good one.”', '-Abraham Lincoln ', 'Sierra', new Date(2019,4,6), 0, 0),
   ];
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;

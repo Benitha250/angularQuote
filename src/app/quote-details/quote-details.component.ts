@@ -12,10 +12,10 @@ export class QuoteDetailsComponent implements OnInit {
     this.isComplete.emit(complete);
   }
   like() {
-    this.quote.upvote++;
+    this.quote.like++;
   }
   dislike() {
-    this.quote.downvote++;
+    this.quote.dislike++;
   }
   constructor() { }
   ngOnInit(): void {
