@@ -20,7 +20,7 @@ This web page is going to display quotes written by someone through the form on 
 
 
 ## Github Pages link
-You can view the live application by following this link 
+You can view the live application by following this link https://benitha250.github.io/angularQuote/
 
 ## Contact information
 * buwase120@daviscollege.com
