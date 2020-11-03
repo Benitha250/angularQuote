@@ -7,7 +7,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'Do not settle less', 'Benitha', 'Benitha', new Date(2020,5,2), 0, 0),
+    new Quote(1, 'Do not settle for less', 'Benitha', 'Benitha', new Date(2020,5,2), 0, 0),
 
   ];
   toggleDetails(index){
