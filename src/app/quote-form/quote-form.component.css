@@ -1,3 +1,7 @@
 .container-fluid{
-    background-color:grey;
+    background-color:rgb(85, 122, 71);
+    padding-top: 20px;
+}
+h2{
+    font-weight: bold;
 }

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <h2 class="text-center">Create a new Quote</h2>
+  <h2 class="text-center">Publish your new Quote</h2>
   <hr>
   <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
       <div class="form-group">
@@ -24,7 +24,7 @@
           </div>
       </div>
       <div class="form-group">
-          <label for="complete">Completion</label>
+          <label for="complete">Completion: </label>
           <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
           <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
             <p>Date is required</p>
