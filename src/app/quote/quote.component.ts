@@ -7,8 +7,9 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'Do not settle for less', 'Benitha', 'Benitha', new Date(2020,5,2), 0, 0),
-
+    new Quote(1, '"Do not settle for less."', 'Benitha', 'Benitha', new Date(2020,5,2), 0, 0),
+    new Quote(2, '"Make everyday a little less ordinary."', 'unknown', 'Benitha', new Date(2020,6,11), 0, 0),
+    new Quote(3, '"You did not come this far to only come this far."', 'unknown', 'Benitha', new Date(2020,4,11), 0, 0),
   ];
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
@@ -27,6 +28,8 @@ export class QuoteComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
+
+  
   constructor() { }
   ngOnInit(): void {
   }
